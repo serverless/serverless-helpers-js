@@ -1,4 +1,4 @@
-# Serverless Helpers (Node.js Version)
+Serverless Helpers (Node.js Version)
 =================================
 
 ###Features
