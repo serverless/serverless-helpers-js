@@ -1,9 +1,10 @@
 {
   "name": "serverless-helpers-js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Helper functions for Serverless modules.",
   "author": "Austen Collins <austen@servant.co>, Ryan Pendergast <ryan.pendergast@gmail.com>",
   "license": "MIT",
+  "main": "index.js",
   "repository": {
     "type" : "git",
     "url" : "https://github.com/serverless/serverless-helpers-js"
