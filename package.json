@@ -1,0 +1,22 @@
+{
+  "name": "serverless-helpers-js",
+  "version": "0.0.1",
+  "description": "Helper functions for Serverless modules.",
+  "author": "Austen Collins <austen@servant.co>, Ryan Pendergast <ryan.pendergast@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/serverless/serverless-helpers-js"
+  },
+  "keywords": [
+    "serverless",
+    "serverless modules",
+    "environment variables",
+    "lambda",
+    "api gateway"
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "dotenv": "^1.2.0"
+  }
+}
