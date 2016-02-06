@@ -12,7 +12,7 @@ var ServerlessHelpers = {
   // Shim interacting with Lambda to a callback call
   shimCallback: function(method) {
     return function (event, context) {
-      return method(event, function (err, val) {
+      method(event, function (err, val) {
         return context.done(err, val);
       });
     }
