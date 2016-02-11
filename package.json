@@ -1,6 +1,6 @@
 {
   "name": "serverless-helpers-js",
-  "version": “0.1.0”,
+  "version": "0.1.0",
   "description": "Helper functions for Serverless modules.",
   "author": "Austen Collins <austen@servant.co>, Ryan Pendergast <ryan.pendergast@gmail.com>",
   "license": "MIT",
