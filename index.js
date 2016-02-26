@@ -8,6 +8,11 @@ var ServerlessHelpers = {
   loadEnv: function() {
     require('./env');
   },
+  
+  // Retrieve CF output variables
+  // For now has to be called AFTER loadEnv() as we need
+  // the SERVERLESS variables to compose the CF stack name.
+  CF: require('./CF'),
 
   // Shim interacting with Lambda to a callback call
   shimCallback: function(method) {

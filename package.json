@@ -1,13 +1,13 @@
 {
   "name": "serverless-helpers-js",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Helper functions for Serverless modules.",
-  "author": "Austen Collins <austen@servant.co>, Ryan Pendergast <ryan.pendergast@gmail.com>",
+  "author": "Austen Collins <austen@servant.co>, Ryan Pendergast <ryan.pendergast@gmail.com>, Frank Schmid <fschmid740@googlemail.com>",
   "license": "MIT",
   "main": "index.js",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/serverless/serverless-helpers-js"
+    "type": "git",
+    "url": "https://github.com/serverless/serverless-helpers-js"
   },
   "keywords": [
     "serverless",
@@ -16,8 +16,12 @@
     "lambda",
     "api gateway"
   ],
-  "devDependencies": {},
+  "devDependencies": {
+    "aws-sdk": "^2.2.38"
+  },
   "dependencies": {
+    "asyncawait": "^1.0.3",
+    "bluebird": "^3.3.3",
     "dotenv": "^1.2.0"
   }
 }
