@@ -20,7 +20,6 @@
     "aws-sdk": "^2.2.38"
   },
   "dependencies": {
-    "asyncawait": "^1.0.3",
     "bluebird": "^3.3.3",
     "dotenv": "^1.2.0"
   }
