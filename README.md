@@ -3,7 +3,7 @@ Serverless Helpers (Node.js Version)
 
 ###Features
 * Helps your modules locate and load Stage Variables that the Serverless framework adds on deployment.
-* Allows access to the CF Output variables that you defined in the `s-template.json` file.
+* Allows access to the CF Output variables that you defined in the `s-resources-cf.json` file.
 
 ## CF Output variables
 To have your lambda access the CF output variables you have to give it the `cloudformation:describeStacks` access rights in the lambda IAM role.
