@@ -9,7 +9,7 @@ Serverless Helpers (Node.js Version)
 To have your lambda access the CF output variables you have to give it the `cloudformation:describeStacks` access rights in the lambda IAM role.
 
 The CF.loadVars() promise will add all CF output variables to the process'
-environment as *SERVERLESS_CF_<OutVar name>*. It will add a few ms to the
+environment as *SERVERLESS_CF_`OutVar name`*. It will add a few ms to the
 startup time of your lambda.
 
 Change your lambda handler as follows:
