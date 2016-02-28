@@ -30,6 +30,9 @@ module.exports.handler = function(event, context) {
       return context.done(error, response);
     });
   })
+  .catch(function(err) {
+    return context.done(err, null);
+  });
 };
 ```
 
