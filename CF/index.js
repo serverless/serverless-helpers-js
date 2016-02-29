@@ -16,11 +16,11 @@ var CF = {
  */
 CF.loadVars = function () {
   // Build CF stack name
-  if (!process.env.SERVERLESS_PROJECT || !process.env.SERVERLESS_STAGE || !process.env.SERVERLESS_REGION) {
-    return Promise.fail(new Error("Serverless environment not set"));
+  if ((!process.env.SERVERLESS_PROJECT_NAME || !process.env.SERVERLESS_STAGE || !process.env.SERVERLESS_REGION)) {
+    return Promise.reject(new Error("Serverless environment not set"));
   }
 
-  var stackName = process.env.SERVERLESS_PROJECT + "-" + process.env.SERVERLESS_STAGE + "-r";
+  var stackName = process.env.SERVERLESS_PROJECT_NAME + "-" + process.env.SERVERLESS_STAGE + "-r";
   return CF._describeCFStack(stackName)
     .then(function(stackDescription) {
       if (!stackDescription.hasOwnProperty('Outputs') || stackDescription.Outputs.constructor !== Array) {
