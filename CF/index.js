@@ -6,8 +6,6 @@
 var Promise = require('bluebird'),
     AWS = require('aws-sdk');
 
-var cloudformation = new AWS.CloudFormation({apiVersion: '2010-05-15', region: process.env.SERVERLESS_REGION });
-
 var CF = {
 };
 
@@ -43,6 +41,8 @@ CF.loadVars = function () {
  */
 CF._describeCFStack = function(stackName) {
   return new Promise(function(resolve,reject) {
+    var cloudformation = new AWS.CloudFormation({apiVersion: '2010-05-15', region: process.env.SERVERLESS_REGION });
+
     cloudformation.describeStacks({ StackName: stackName }, function(err, data) {
       if (err) {
         reject(err);
