@@ -1,5 +1,6 @@
 Serverless Helpers (Node.js Version)
 =================================
+[![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
 
 ###Features
 * Helps your modules locate and load Stage Variables that the Serverless framework adds on deployment.
