@@ -2,6 +2,10 @@ Serverless Helpers (Node.js Version)
 =================================
 [![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
 
+# Currently unmaintained
+
+At the moment this library is unmaintained, we're going to take another look at it after we've release V1 of the Framework to evaluate how we should support it in the future.
+
 ###Features
 * Helps your modules locate and load Stage Variables that the Serverless framework adds on deployment.
 * Allows access to the CF Output variables that you defined in the `s-resources-cf.json` file.
