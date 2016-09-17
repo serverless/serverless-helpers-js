@@ -10,6 +10,23 @@ At the moment this library is unmaintained, we're going to take another look at 
 * Helps your modules locate and load Stage Variables that the Serverless framework adds on deployment.
 * Allows access to the CF Output variables that you defined in the `s-resources-cf.json` file.
 
+## Access environment variables
+After loading your `.env` file's environment variables with
+```
+var ServerlessHelpers = require('serverless-helpers-js');
+ServerlessHelpers.loadEnv();
+```
+
+You can access them through `process.env`. For example, if you define database info in your `.env`:
+```
+var dbConnection = mysql.createConnection({
+	host: process.env.databaseServer,
+	user: process.env.databaseUser,
+	password: process.env.databasePassword,
+	database: process.env.database
+});
+```
+
 ## CF Output variables
 To have your lambda access the CF output variables you have to give it the `cloudformation:describeStacks` access rights in the lambda IAM role.
 
